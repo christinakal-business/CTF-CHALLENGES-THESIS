@@ -1,0 +1,25 @@
+
+%Image::ExifTool::UserDefined = (
+    'Image::ExifTool::XMP::Main' => {
+        ctf => {
+            SubDirectory => {
+                TagTable => 'Image::ExifTool::UserDefined::ctf',
+            },
+        },
+    },
+);
+
+%Image::ExifTool::UserDefined::ctf = (
+    GROUPS => {
+        0 => 'XMP',
+        1 => 'XMP-ctf',
+        2 => 'Image',
+    },
+    NAMESPACE => {
+        ctf => 'https://example.org/ctf/1.0/',
+    },
+    WRITABLE => 'string',
+    Flag => {},
+);
+
+1;
