@@ -16,7 +16,7 @@
         2 => 'Image',
     },
     NAMESPACE => {
-        ctf => 'https://example.org/ctf/1.0/',
+        ctf => 'urn:ctf:steganography',
     },
     WRITABLE => 'string',
     Flag => {},
