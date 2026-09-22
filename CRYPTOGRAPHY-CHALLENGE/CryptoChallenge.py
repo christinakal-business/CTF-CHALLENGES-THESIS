@@ -17,7 +17,7 @@ pixels += bytes([pad_len] * pad_len)
 
 # generates a pseudorandom 16-byte (128-bit) symmetric encryption key
 key = os.urandom(16)
-# AES e ncryption tool that uses key in ECB mode
+# AES encryption tool that uses key in ECB mode
 cipher = AES.new(key, AES.MODE_ECB)
 # encyrpt pixel data
 encrypted_pixels = cipher.encrypt(pixels)
